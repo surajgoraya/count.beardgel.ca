@@ -5,7 +5,7 @@ import humanize
 import datetime as dt
 def get_counts():
     dirname = os.path.dirname(__file__)
-    filename = os.path.join(dirname, '/static/countdown.yaml')
+    filename = os.path.join(dirname, '../api/static/countdown.yaml')
     try:
         with open(filename, "r") as stream:
             try:
