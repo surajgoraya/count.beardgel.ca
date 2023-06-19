@@ -1,0 +1,8 @@
+Countdowns:
+    - 
+      date: 09-06-2023
+      name: 🌃 Starfield
+      cover_image: https://images.ctfassets.net/rporu91m20dc/76rCsccQzeMFlslD3QEZUu/9ff1e52b5882a982ca62c3973248e509/Starfield_StarfieldXS_March.png?h=536&w=375
+      text: Starfield comes out in
+      data_source: https://bethesda.net/en/game/starfield/article/6UrZPOEn3yPtnTVXG0U68n/starfield-official-launch-date
+      should_notify: true
