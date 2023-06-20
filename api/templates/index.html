@@ -1,8 +1,14 @@
-<!doctype html>
-<title>The Beardgel Collective - Countdowns</title>
-<link rel="shortcut icon" href="https://static.beardgel.ca/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href={{url_for('static', filename='pico.css' )}}>
-<link rel="stylesheet" href={{url_for('static', filename='style.css' )}}>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Beardgel Collective - Countdowns</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://static.beardgel.ca/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href={{url_for('static', filename='pico.css' )}}>
+    <link rel="stylesheet" href={{url_for('static', filename='style.css' )}}>
+</head>
 
 <body>
     <nav class="container">
@@ -19,19 +25,22 @@
             {% for data in countdown_data %}
             <div class="countdown_item" style="background-image: url({{data.cover_image}});">
                 {% if 'cover_image' in data %}
-                    <div class="countdown_item__cover"></div>
+                <div class="countdown_item__cover"></div>
                 {% endif %}
                 <div class="countdown_item__content">
                     <div class="countdown_item__header">
                         <strong>{{data.name}}</strong>
                     </div>
                     <div class="countdown_item__body">
-                        {{data.text}} <strong> {{data.friendly_date}}</strong>   
+                        {{data.text}} <strong> {{data.friendly_date}}</strong>
                     </div>
                     <div class="countdown_item__footer">
-                        <a href={{data.data_source}}>More Info <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-                          </svg></a>
+                        <a href={{data.data_source}}>More Info <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                            </svg></a>
                     </div>
                 </div>
             </div>
@@ -39,3 +48,5 @@
         </div>
     </main>
 </body>
+
+</html>
