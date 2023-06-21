@@ -33,6 +33,11 @@
                     </div>
                     <div class="countdown_item__body">
                         {{data.text}} <strong> {{data.friendly_date}}</strong>
+                        {% if 'sub_date' in data %}
+                            <br/>
+                            <br/>
+                            <small>{{data.sub_text}} <strong> {{data.friendly_sub_date}}</strong></small>
+                        {% endif %}
                     </div>
                     <div class="countdown_item__footer">
                         <a href={{data.data_source}}>More Info <svg xmlns="http://www.w3.org/2000/svg" width="16"

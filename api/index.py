@@ -11,6 +11,7 @@ def home():
         return render_template('index.html', countdown_data=counts['Countdowns'])
     else:
         return render_template('error.html'), 500
+
 @app.route('/api/countdowns')
 def countdowns_raw():
     if (counts == None):
